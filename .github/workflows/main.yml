@@ -1,4 +1,3 @@
-```yaml
 name: 'Lint Code'
 
 on:
@@ -51,4 +50,3 @@ jobs:
         run: |
           find ./server/database -name "*.js" -exec jshint {} + || true
           echo "Linted all the js files successfully"
-```
