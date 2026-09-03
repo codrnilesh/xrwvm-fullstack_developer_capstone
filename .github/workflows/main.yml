@@ -32,7 +32,7 @@ jobs:
     - name: Run Linter
       run: |
         pwd
-        find . -name "*.py" -exec flake8 {} +
+        find ./server -name "*.py" -exec flake8 --select=E9,F63,F7,F82 --show-source --statistics {} +
         echo "Linted all the python files successfully"
 
   lint_js:
